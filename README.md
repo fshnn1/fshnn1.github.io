@@ -8,7 +8,6 @@
   * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif; }
   body { background:#fdf6f0; color:#333; padding-top:70px; }
 
-  /* ===== ШАПКА (фиксированная) ===== */
   header {
     position:fixed; top:0; left:0; right:0; z-index:1000;
     background:linear-gradient(135deg,#ff9eb5,#ffb6c1);
@@ -37,7 +36,6 @@
     display:flex; align-items:center; justify-content:center;
   }
 
-  /* ===== СТРАНИЦЫ ===== */
   .page { display:none; padding:40px; min-height:80vh; }
   .page.active { display:block; animation:fadeIn .4s; }
   @keyframes fadeIn { from{opacity:0;transform:translateY(10px);} to{opacity:1;transform:none;} }
@@ -45,7 +43,6 @@
   h1 { color:#d63384; margin-bottom:20px; font-size:36px; }
   h2 { color:#d63384; margin:20px 0 15px; }
 
-  /* ===== ГЛАВНАЯ ===== */
   .hero {
     background:linear-gradient(rgba(255,158,181,.7),rgba(255,182,193,.7)),
       url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><text y='50' font-size='50'>🌸</text></svg>");
@@ -62,7 +59,6 @@
   }
   .feature .icon { font-size:40px; margin-bottom:10px; }
 
-  /* ===== КАТАЛОГ ===== */
   .catalog { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:25px; }
   .product {
     background:#fff; border-radius:15px; overflow:hidden;
@@ -95,7 +91,6 @@
   .add-btn:hover { background:#b02a6e; }
   .add-btn:disabled { background:#ccc; cursor:not-allowed; }
 
-  /* ===== КАРТОЧКА ТОВАРА ===== */
   .product-detail {
     display:grid; grid-template-columns:1fr 1fr; gap:40px;
     max-width:1000px; margin:0 auto;
@@ -181,7 +176,6 @@
   }
   .back-btn:hover { background:#7f8c8d; }
 
-  /* ===== ЛАЙТБОКС ===== */
   .lightbox {
     display:none; position:fixed; top:0; left:0; right:0; bottom:0;
     background:rgba(0,0,0,.95); z-index:5000;
@@ -226,7 +220,6 @@
     border-radius:20px; font-size:16px;
   }
 
-  /* ===== КОРЗИНА ===== */
   .cart-item {
     background:#fff; padding:15px; border-radius:10px; margin-bottom:10px;
     display:flex; justify-content:space-between; align-items:center;
@@ -246,7 +239,6 @@
     font-size:20px; font-weight:bold; text-align:right;
   }
 
-  /* ===== ФОРМЫ ===== */
   .form-box {
     background:#fff; max-width:450px; margin:20px auto; padding:35px;
     border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,.1);
@@ -274,11 +266,9 @@
   }
   .tab.active { background:#d63384; color:#fff; }
 
-  /* ===== О НАС ===== */
   .about-content { max-width:800px; margin:0 auto; line-height:1.8; font-size:17px; }
   .about-content p { margin-bottom:15px; }
 
-  /* ===== ОПЛАТА ===== */
   .payment-methods { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; margin-top:20px; }
   .payment-card {
     background:#fff; padding:25px; border-radius:12px; text-align:center;
@@ -286,7 +276,6 @@
   }
   .payment-card .icon { font-size:50px; margin-bottom:10px; }
 
-  /* ===== КОНТАКТЫ ===== */
   .contacts-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
   .contact-card {
     background:#fff; padding:25px; border-radius:12px; text-align:center;
@@ -294,7 +283,6 @@
   }
   .contact-card .icon { font-size:40px; margin-bottom:10px; }
 
-  /* ===== МОДАЛЬНОЕ ОКНО ===== */
   .modal {
     display:none; position:fixed; top:0; left:0; right:0; bottom:0;
     background:rgba(0,0,0,.6); z-index:2000;
@@ -310,7 +298,6 @@
     cursor:pointer; color:#999;
   }
 
-  /* ===== ФУТЕР ===== */
   footer {
     background:#2c3e50; color:#ecf0f1; padding:40px 40px 20px; margin-top:40px;
   }
@@ -330,7 +317,6 @@
   }
   @keyframes slideIn { from{transform:translateX(100%);} to{transform:none;} }
 
-  /* ===== АДМИН-ПАНЕЛЬ ===== */
   .admin-product-row {
     background:#fff; padding:15px; border-radius:10px; margin-bottom:10px;
     display:flex; align-items:center; gap:15px;
@@ -377,7 +363,6 @@
 </head>
 <body>
 
-<!-- ===== ШАПКА ===== -->
 <header>
   <div class="logo" onclick="showPage('home')"><span>🌸</span> Флора</div>
   <nav>
